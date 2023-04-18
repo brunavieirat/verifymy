@@ -39,10 +39,10 @@ const ButtonSecondary = styled(Button)`
 const ButtonStyled = ({ ...props }) => {
   return (
     <>
-      {props.type === "primary" && (
-        <ButtonPrimary variant="outlined">{props.children}</ButtonPrimary>
+      {props.typeButton === "primary" && (
+        <ButtonPrimary variant="outlined" {...props}>{props.children}</ButtonPrimary>
       )}
-      {props.type === "secondary" && (
+      {props.typeButton === "secondary" && (
         <ButtonSecondary variant="outlined">{props.children}</ButtonSecondary>
       )}
     </>
