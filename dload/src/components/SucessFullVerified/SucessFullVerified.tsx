@@ -26,7 +26,7 @@ const SucessfullVerified = () => {
       <Typography
         sx={{
           fontSize: 16,
-          fontWeight: 600,
+          fontWeight: 300,
           width: 100,
           marginTop: { xs: 1 },
           marginLeft: { lg: 2 },

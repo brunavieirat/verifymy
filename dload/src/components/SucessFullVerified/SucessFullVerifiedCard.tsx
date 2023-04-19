@@ -4,7 +4,7 @@ import CheckIcon from "../../assets/success.png";
 import Image from "next/image";
 import Subtitle from "../Subtitle";
 
-const SucessfullVerifiedCard = ({text}: any) => {
+const SucessfullVerifiedCard = ({ text }: any) => {
   return (
     <Box
       sx={{
@@ -14,7 +14,7 @@ const SucessfullVerifiedCard = ({text}: any) => {
         borderColor: "vma.lightGrey",
         borderRadius: 5,
         borderTop: "none",
-        display: {xs:"flex", lg: "none"},
+        display: { xs: "flex", lg: "none" },
         justifyContent: "center",
         textAlign: "center",
         alignItems: "center",
@@ -31,9 +31,7 @@ const SucessfullVerifiedCard = ({text}: any) => {
           alignItems: "center",
         }}
       >
-        <Subtitle>
-          {text}
-        </Subtitle>
+        <Subtitle>{text}</Subtitle>
       </Box>
     </Box>
   );

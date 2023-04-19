@@ -3,7 +3,6 @@ import LogoGrey from "../../assets/greylogo.png";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 
-
 const Secured = () => {
   return (
     <Box
@@ -16,14 +15,20 @@ const Secured = () => {
         borderColor: "vma.lightGrey ",
         borderTop: "0.06rem solid",
         display: { xs: "flex", lg: "none" },
-        alignItems: 'flex-start',
+        alignItems: "flex-start",
       }}
     >
-      <LockIcon sx={{ fontSize: 15 }} /> <Typography sx={{
-        fontWeight: 200,
-        margin: '0 0.4rem',
-        fontSize: "0.8rem",
-      }}> Secured by</Typography>
+      <LockIcon sx={{ fontSize: 15 }} />{" "}
+      <Typography
+        sx={{
+          fontWeight: 200,
+          margin: "0 0.4rem",
+          fontSize: "0.8rem",
+        }}
+      >
+        {" "}
+        Secured by
+      </Typography>
       <Image
         src={LogoGrey}
         alt="grey-logo"

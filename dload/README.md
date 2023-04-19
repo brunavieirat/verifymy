@@ -1,38 +1,128 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Claro! Segue um exemplo de um README com estrutura de pastas e componentes para um projeto feito com Next.js e React:
 
-## Getting Started
+# Nome do Projeto
 
-First, run the development server:
+Descrição do projeto.
+
+## Pré-requisitos
+
+Antes de começar, você precisará ter instalado em sua máquina o [Node.js](https://nodejs.org/) e um gerenciador de pacotes como o [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
+
+## Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clone este repositório
+$ git clone https://github.com/seu-usuario/nome-do-projeto
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd nome-do-projeto
+
+# Instale as dependências
+$ yarn install
+
+# ou
+
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Executando o projeto
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# ou
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+$ npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+A aplicação será executada em modo de desenvolvimento em `http://localhost:3000`.
 
-## Learn More
+## Compilando para produção
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Compila a aplicação para produção
+$ yarn build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ou
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+$ npm run build
+```
 
-## Deploy on Vercel
+## Executando a aplicação em modo de produção
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Executa a aplicação em modo de produção
+$ yarn start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# ou
+
+$ npm start
+```
+
+## Testes
+
+```bash
+# Executa os testes
+$ yarn test
+
+# ou
+
+$ npm run test
+```
+
+## Tecnologias utilizadas
+
+As seguintes ferramentas foram utilizadas na construção deste projeto:
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Material-UI](https://material-ui.com/)
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://enzymejs.github.io/enzyme/)
+
+## Estrutura de pastas
+
+```bash
+nome-do-projeto/
+├── components/
+│   ├── Button/
+│   │   ├── Button.jsx
+│   │   └── Button.test.js
+│   ├── Card/
+│   │   ├── Card.jsx
+│   │   └── Card.test.js
+│   └── ...
+├── pages/
+│   ├── index.jsx
+│   ├── about.jsx
+│   └── ...
+├── public/
+│   ├── images/
+│   │   └── ...
+│   ├── favicon.ico
+│   └── ...
+├── styles/
+│   ├── globals.css
+│   ├── theme.js
+│   └── ...
+├── utils/
+│   ├── api.js
+│   ├── auth.js
+│   └── ...
+├── .babelrc
+├── .eslintrc
+├── .gitignore
+├── .prettierrc
+├── jest.config.js
+├── next.config.js
+├── package.json
+├── README.md
+└── yarn.lock
+```
+
+- `components/`: contém todos os componentes React reutilizáveis, com seus respectivos arquivos de teste.
+- `pages/`: contém as páginas do projeto, em formato JSX.
+- `public/`: contém arquivos estáticos como imagens e favicon.
+- `styles/`: contém arquivos de estilo, incluindo arquivos de tema e arquivos CSS globais.
+- `utils/`: contém funções e arquivos auxiliares,

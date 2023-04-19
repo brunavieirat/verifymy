@@ -9,8 +9,8 @@ const ButtonStyled = ({ ...props }) => {
         {...props}
         sx={{
           width: { xs: "100%" },
-          display: 'flex',
-          alignItems: 'flex-start',
+          display: "flex",
+          alignItems: "flex-start",
           backgroundColor: buttonColor,
           borderRadius: 50,
           borderColor: buttonBorder,
