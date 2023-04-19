@@ -1,5 +1,5 @@
 import LockIcon from "@mui/icons-material/Lock";
-import LogoGrey from "@/assets/greylogo.png";
+import LogoGrey from "../../assets/greylogo.png";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 

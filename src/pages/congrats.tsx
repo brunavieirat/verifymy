@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import Image from 'next/image';
 import Logo from '@/assets/Logo.png';
-import Steps from '@/assets/Steps.png';
 import Secured from "@/components/Secured/Secured";
 import SucessfullVerified from "@/components/SucessFullVerified/SucessFullVerified";
 import SucessfullVerifiedCard from "@/components/SucessFullVerified/SucessFullVerifiedCard";
@@ -21,12 +20,6 @@ const CongratsPage = () => {
         alt="logo verifymy"
         width={135}
         height={25.5}        
-        />
-         <Image
-        src={Steps}
-        alt="steps"
-            // width={135}
-            // height={25.5}        
         />
         </Box>
         <Box sx={{marginBottom: 8, display: {xs: 'none', lg: 'block'}}}>

@@ -1,14 +1,15 @@
 import { useForm } from "react-hook-form";
 import { Stack, Container } from "@mui/material";
-import { PhoneField, TextField } from "@/components";
-import { PasswordField } from "@/components/PasswordField/PasswordField";
+import { PasswordField } from "../PasswordField/PasswordField";
 
 import { yupResolver } from "@hookform/resolvers/yup";
-import { IMainSchema, mainSchema } from "@/schemas";
+import { IMainSchema, mainSchema } from "../../schemas/index";
 import ButtonsSection from "./ButtonsSection";
 import { useRouter } from "next/router";
 import AcceptTerms from "../AcceptTerms/AcceptTerms";
 import Secured from "../Secured/Secured";
+import { PhoneField } from "../PhoneField";
+import { TextField } from "../TextField";
 
 const Form = () => {
   const {
