@@ -15,12 +15,9 @@ Antes de começar, você precisará ter instalado em sua máquina o [Node.js](ht
 $ git clone https://github.com/seu-usuario/nome-do-projeto
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd nome-do-projeto
+$ cd verifymy
 
 # Instale as dependências
-$ yarn install
-
-# ou
 
 $ npm install
 ```
@@ -29,44 +26,17 @@ $ npm install
 
 ```bash
 # Execute a aplicação em modo de desenvolvimento
-$ yarn dev
 
-# ou
 
 $ npm run dev
 ```
 
 A aplicação será executada em modo de desenvolvimento em `http://localhost:3000`.
 
-## Compilando para produção
-
-```bash
-# Compila a aplicação para produção
-$ yarn build
-
-# ou
-
-$ npm run build
-```
-
-## Executando a aplicação em modo de produção
-
-```bash
-# Executa a aplicação em modo de produção
-$ yarn start
-
-# ou
-
-$ npm start
-```
-
 ## Testes
 
 ```bash
 # Executa os testes
-$ yarn test
-
-# ou
 
 $ npm run test
 ```
@@ -79,7 +49,7 @@ As seguintes ferramentas foram utilizadas na construção deste projeto:
 - [React](https://reactjs.org/)
 - [Material-UI](https://material-ui.com/)
 - [Jest](https://jestjs.io/)
-- [Enzyme](https://enzymejs.github.io/enzyme/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## Estrutura de pastas
 
@@ -87,20 +57,17 @@ As seguintes ferramentas foram utilizadas na construção deste projeto:
 nome-do-projeto/
 ├── components/
 │   ├── Button/
-│   │   ├── Button.jsx
-│   │   └── Button.test.js
-│   ├── Card/
-│   │   ├── Card.jsx
-│   │   └── Card.test.js
+│   │   ├── Button.tsx
+│   │   └── Button.test.tsx
+│   │   └── index.tsx
 │   └── ...
 ├── pages/
-│   ├── index.jsx
-│   ├── about.jsx
+│   ├── index.tsx
+│   ├── congrats.tsx
 │   └── ...
-├── public/
+├── assets/
 │   ├── images/
 │   │   └── ...
-│   ├── favicon.ico
 │   └── ...
 ├── styles/
 │   ├── globals.css
@@ -108,21 +75,16 @@ nome-do-projeto/
 │   └── ...
 ├── utils/
 │   ├── api.js
-│   ├── auth.js
 │   └── ...
-├── .babelrc
-├── .eslintrc
 ├── .gitignore
 ├── .prettierrc
 ├── jest.config.js
 ├── next.config.js
 ├── package.json
 ├── README.md
-└── yarn.lock
 ```
 
-- `components/`: contém todos os componentes React reutilizáveis, com seus respectivos arquivos de teste.
-- `pages/`: contém as páginas do projeto, em formato JSX.
-- `public/`: contém arquivos estáticos como imagens e favicon.
+- `components/`: contém todos os componentes React reutilizáveis.
+- `pages/`: contém as páginas do projeto.
 - `styles/`: contém arquivos de estilo, incluindo arquivos de tema e arquivos CSS globais.
 - `utils/`: contém funções e arquivos auxiliares,
