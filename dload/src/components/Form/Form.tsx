@@ -7,7 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { IMainSchema, mainSchema } from "@/schemas";
 import ButtonsSection from "./ButtonsSection";
 import { useRouter } from "next/router";
-import AcceptTerms from "../AcceptTerms";
+import AcceptTerms from "../AcceptTerms/AcceptTerms";
 import Secured from "../Secured/Secured";
 
 const Form = () => {

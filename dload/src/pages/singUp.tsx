@@ -1,12 +1,11 @@
-import styled, { ThemeProvider } from "styled-components";
-import Title from "@/components/Title";
-import Subtitle from "@/components/Subtitle";
+import styled from "styled-components";
+import { Title, Subtitle } from "@/components";
 
-import BackButton from "@/components/BackButton/BackButton";
 import Image from "next/image";
 import BackgroundImage from "../assets/background.png";
 import Form from "@/components/Form/Form";
 import { Box } from "@mui/material";
+import BackButton from "@/components/BackButton/BackButton";
 
 const HeaderStyled = styled.div`
   @media screen and (max-width: 1023px) {
@@ -41,7 +40,10 @@ export default function SignUp() {
 
 
   return (
-      <Container style={{ padding: "20px", backgroundColor: "#F8F8F8", display: 'flex', width: '100%' }}>
+      <Container style={{ padding: "20px", backgroundColor: "#F8F8F8", display: 'flex'}}>
+       <Box sx={{
+          display: {xs: 'none', lg: 'block'}
+        }}>
         <ImageStyled
           src={BackgroundImage}
           // sizes="
@@ -49,9 +51,9 @@ export default function SignUp() {
           //     "
           style={{ height: "100%", width: '50%' }}
           alt="background-desktop"
-        />
+        /></Box>
         <Box sx={{
-          width: {xs: '100%', lg: '50%'}
+          width: {xs: '100wv', lg: '50%'}
         }}>
           <HeaderStyled>
             <BackButton />

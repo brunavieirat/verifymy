@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
 import CheckIcon from "../../assets/success.png";
 import Image from "next/image";
-import Subtitle from "../Subtitle";
+import Subtitle from "../Subtitle/Subtitle";
 
 const SucessfullVerifiedCard = ({ text }: any) => {
   return (

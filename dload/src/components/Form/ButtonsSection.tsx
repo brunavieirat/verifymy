@@ -1,5 +1,5 @@
 import LockIcon from "@mui/icons-material/Lock";
-import ButtonStyled from "../Button";
+import ButtonStyled from "../Button/Button";
 import { Box } from "@mui/material";
 
 
