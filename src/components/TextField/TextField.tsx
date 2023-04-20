@@ -4,7 +4,6 @@ import { TextField as MuiTextField } from "@mui/material";
 
 import { TextFieldProps } from "./TextField.types";
 
-/* https://mui.com/material-ui/customization/how-to-customize/ */
 function RootTextField(
   { sx, InputLabelProps, ...rest }: TextFieldProps,
   ref: React.Ref<any>

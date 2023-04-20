@@ -24,24 +24,30 @@ const ImageStyled = styled(Image)`
 `;
 export default function SignUp() {
   return (
-    <Container style={{ padding: '20px', backgroundColor: '#F8F8F8' }}>
+    <Box
+      style={{
+        display: 'flex',
+        backgroundColor: '#F8F8F8',
+        height: '100%',
+        overflow: 'hidden',
+      }}
+    >
       <Box
         sx={{
           display: { xs: 'none', lg: 'block' },
+          width: '50%',
         }}
       >
         <ImageStyled
           src={BackgroundImage}
-          // sizes="
-          //     (min-width: 1000px) 10vw,
-          //     "
-          style={{ height: '100%', width: '50%' }}
+          style={{ height: '100%', width: '100%' }}
           alt="background-desktop"
         />
       </Box>
       <Box
         sx={{
           width: { xs: '100wv', lg: '50%' },
+          padding: 5
         }}
       >
         <Box
@@ -67,6 +73,6 @@ export default function SignUp() {
 
         <Form />
       </Box>
-    </Container>
+    </Box>
   );
 }

@@ -6,7 +6,6 @@ const ButtonStyled = ({ ...props }) => {
     <>
       <Button
         variant="outlined"
-        {...props}
         sx={{
           width: { xs: "100%" },
           display: "flex",
