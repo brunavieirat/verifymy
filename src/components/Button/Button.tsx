@@ -24,6 +24,7 @@ const ButtonStyled = ({ ...props }) => {
             borderColor: buttonBorder,
           },
         }}
+        type={props.type}
       >
         {props.children}
       </Button>
